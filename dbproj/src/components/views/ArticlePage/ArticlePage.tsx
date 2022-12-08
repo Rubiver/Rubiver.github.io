@@ -43,7 +43,7 @@ function ArticlePage() {
     const [item, setItem] = useState([]);
     const callApi = async () => {
         axios
-            .post("http://localhost:4000/setItem/setItem", null, {
+            .post("/setItem/setItem", null, {
                 params: {
                     id: id
                 },

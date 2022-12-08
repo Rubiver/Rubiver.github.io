@@ -27,7 +27,7 @@ function NewRegisterPage() {
     const onClickCheckEmail = () => {
         if (email !== "") {
             axios
-                .post("http://localhost:4000/users/checkEmail", null, {
+                .post("/users/checkEmail", null, {
                     params: {
                         email: email,
                     },
@@ -49,7 +49,7 @@ function NewRegisterPage() {
     const onClickRegister = () => {
         if (password1 === password2 && password1 !== "" && password2 !== "" && phonenum !== "" && address !== "" && emailCheck === true) {
             axios
-                .post("http://localhost:4000/users/onRegister", null, {
+                .post("/users/onRegister", null, {
                     params: {
                         email: email,
                         name: name,

@@ -21,7 +21,7 @@ function RegisterPage() {
             window.location.replace("/");
         } else {
             axios
-                .post("http://localhost:4000/users/onLogin", null, {
+                .post("/users/onLogin", null, {
                     params: {
                         email: localStorage.getItem("id"),
                         token: localStorage.getItem("token"),

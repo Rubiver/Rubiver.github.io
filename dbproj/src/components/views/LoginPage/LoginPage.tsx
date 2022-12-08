@@ -34,7 +34,7 @@ function LoginPage() {
     const onClickLogin = () => {
         if (email !== "" && password !== "") {
             axios
-                .post("http://localhost:4000/users/onLogin", null, {
+                .post("/users/onLogin", null, {
                     params: {
                         email: email,
                         password: password,
@@ -125,10 +125,10 @@ function LoginPage() {
                     </ThemeProvider>
                     <Grid container>
                         <Grid item xs>
-                            <Link href="http://localhost:3000/article/:articleId">비밀번호 찾기</Link>
+                            <Link href="https://rubiver.github.io/article/:articleId">비밀번호 찾기</Link>
                         </Grid>
                         <Grid item>
-                            <Link href="http://localhost:3000/newRegister">회원 가입</Link>
+                            <Link href="https://rubiver.github.io/newRegister">회원 가입</Link>
                         </Grid>
                     </Grid>
                 </Box>
