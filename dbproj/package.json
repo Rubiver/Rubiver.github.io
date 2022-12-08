@@ -48,7 +48,9 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "dev": "nodemon server/app.js",
-        "server": "node server/app.js"
+        "server": "node server/app.js",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -b master -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -74,6 +76,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@types/styled-components": "^5.1.26"
+        "@types/styled-components": "^5.1.26",
+        "gh-pages": "^4.0.0"
     }
 }

@@ -16,7 +16,7 @@ function BoardList(props: any) {
     const callApi = async () => {
         const boardId = window.location.pathname.split("/")[2];
         console.log(boardId);
-        axios.post("http://localhost:4000/setboard/setBoard", null, {
+        axios.post("/setboard/setBoard", null, {
             params: {
                 boardId: boardId,
             },

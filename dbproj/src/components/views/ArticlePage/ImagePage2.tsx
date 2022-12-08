@@ -49,7 +49,7 @@ function ImagePage2(props: any) {
                     <Grid key={"Test"} alignItems="center" justifyContent="center" container spacing={12}>{
                         row.map((val: any) => (
                             <Grid key={val.pID + 99}>
-                                <a key={val.pID + 999} href={"http://localhost:3000/article/" + val.pID}>
+                                <a key={val.pID + 999} href={"https://rubiver.github.io/article/" + val.pID}>
                                     <img height={200} width={200} key={val.pID} src={val.pIMAGE1}></img>
                                 </a>
                             </Grid>
